@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #282828;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.title {
+  color: rgb(85, 102, 255);
+  font-weight: bolder;
+  font-size: 25pt;
+}
+
+.container {
+  width: 550px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-family: 'Montserrat Semibold', sans-serif;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  background: #1A1A1A;
+  width: 100%;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 14px;
+  padding: 0 15px;
+  outline: none;
+  transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #FF7373;
+}
+
+.form-group button {
+  background-image: linear-gradient(-90deg, rgb(58, 87, 255) 0%, rgb(170, 0, 156) 100%);
+  border-radius: 5px;
+  border: 0;
+  height: 45px;
+  color: #1A1A1A;
+  font-size: 16px;
+  font-family: 'Montserrat Bold', sans-serif;
+  cursor: pointer;
+}
+
+.form-group:last-child {
+  margin-top: 40px;
+}
+
+.result-container {
+  margin-top: 50px;
+}
+
+.result-content {
+  margin-top: 10px;
+  background: #1A1A1A;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.result-content ul {
+  list-style: none;
+}
+
+.result-content ul li {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat Bold', sans-serif;
+  line-height: 30px;
+}
+
+.result-content ul li strong {
+  color: #FF7373;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1000;
+  overflow: auto;
+  display: none;
+  justify-content: center;
+  align-content: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: rgb(14, 9, 39);
+  width: 45%;
+  max-height: 45%;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: .25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .8);
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 0 .75rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
