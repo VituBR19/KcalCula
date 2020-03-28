@@ -1,0 +1,10 @@
+@media screen and (max-width: 480px) {
+    .container {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .modal-content {
+        max-height: 90%;
+        width: 90%;
+    }
+}
