@@ -9,7 +9,7 @@ modalClose.addEventListener('click', closeModal);
 
 function handleSubimit(event) {
     event.preventDefault();
-
+    formValidate()
     modal.style.display = "flex";
 
     const age = getInputNumberValue('age');
@@ -54,10 +54,18 @@ function handleSubimit(event) {
     resultList.innerHTML = layout;
 }
 
+function formValidate() {
+    const inputs = document.querySelectorAll('input')
+
+    inputs.forEach(input => {
+        if(!input.valueAsNumber) {
+            throw alert("Por favor, preencha os campos vazios.")
+        }
+    })
+}
+
 function closeModal() {
-    console.log('entrou')
     modal.style.display = "none";
-    console.log(modal)
 }
 
 function getSelectedValue(id) {
