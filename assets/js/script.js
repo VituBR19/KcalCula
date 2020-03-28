@@ -1,16 +1,20 @@
 const form = document.getElementById('form');
 
-const modal = document.querySelector('.modal');
+const resultModal = document.querySelector('.result-modal');
+const validateModal = document.querySelector('.validate-modal');
+
 const modalClose = document.querySelector('.modal-close');
 
 form.addEventListener('submit', handleSubimit);
-modal.addEventListener('click', closeModal);
-modalClose.addEventListener('click', closeModal);
+resultModal.addEventListener('click', () => closeModal(resultModal));
+validateModal.addEventListener('click', () => closeModal(validateModal));
+
+modalClose.addEventListener('click', () => closeModal(resultModal));
 
 function handleSubimit(event) {
     event.preventDefault();
     formValidate()
-    modal.style.display = "flex";
+    resultModal.style.display = "flex";
 
     const age = getInputNumberValue('age');
     const weight = getInputNumberValue('weight');
@@ -59,12 +63,17 @@ function formValidate() {
 
     inputs.forEach(input => {
         if(!input.valueAsNumber) {
-            throw alert("Por favor, preencha os campos vazios.")
+            throw validateModal.style.display = 'flex';
         }
     })
 }
 
-function closeModal() {
+function closeModal(modal = null) {
+    if(!modal) {
+        validateModal.style.display = 'none';
+        resultModal.style.display = 'none';
+        return 
+    }
     modal.style.display = "none";
 }
 
