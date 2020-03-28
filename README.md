@@ -11,5 +11,5 @@ O projeto foi inteiramente feito com HTML5, CSS3 e JavasScript.
 **O projeto será melhorado com o decorrer do tempo.**
 
 ## Passos futuros 
-- [ ] Regra de validação do formulário.
-- [ ] Adicionar responsividade ao design.
+- [x] Regra de validação do formulário.
+- [x] Adicionar responsividade ao design.
