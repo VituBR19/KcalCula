@@ -5,6 +5,17 @@ const validateModal = document.querySelector('.validate-modal');
 
 const modalClose = document.querySelector('.modal-close');
 
+const mobileInformation = document.getElementById('information');
+const information = document.querySelector('.information')
+
+mobileInformation.addEventListener('click', () => {
+   information.style.display = 'flex'
+
+   setTimeout(() => {
+    information.style.display = 'none'
+   }, 4000);
+})
+
 form.addEventListener('submit', handleSubimit);
 resultModal.addEventListener('click', () => closeModal(resultModal));
 validateModal.addEventListener('click', () => closeModal(validateModal));
