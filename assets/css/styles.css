@@ -8,10 +8,11 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  position: relative;
 }
 
 body {
-  background: #282828;
+  background: #a100a78c;
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
@@ -20,11 +21,19 @@ body {
   color: rgb(85, 102, 255);
   font-weight: bolder;
   font-size: 25pt;
+  bottom: 30px;
+  left: 12%;
 }
 
 .container {
-  width: 550px;
-  margin: 0 auto;
+  background-color: rgb(14, 9, 39);
+  width: 1100px;
+  height: 550px;
+  padding: 10px;
+  margin: 2em auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  overflow: hidden;
 }
 
 header {
@@ -35,10 +44,41 @@ header {
   justify-content: center;
 }
 
+.information {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.information p {
+  position: absolute;
+  top: 50px;
+  margin: 50px;
+  line-height: 35px;
+}
+
+.background {
+  background: url('../images/background.jpg');
+  background-size: cover;
+  opacity: .1;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 50%;
+  height: 350px;
+  float: right;
+  right: 12%;
+  bottom: 10%;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
@@ -49,13 +89,13 @@ header {
 
 .form-group input,
 .form-group select {
-  background: #1A1A1A;
+  background: #fff;
   width: 100%;
-  height: 45px;
+  height: 35px;
   border: 1px solid transparent;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: black;
   font-size: 14px;
   padding: 0 15px;
   outline: none;
@@ -80,6 +120,27 @@ header {
 
 .form-group:last-child {
   margin-top: 40px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs input {
+  margin: 0 15px;
+}
+
+.inputs input:first-child {
+  margin-left: 0;
+}
+
+.inputs input:last-child {
+  margin-right: 0;
+}
+
+.inputs label {
+  margin: 10px 0px;
 }
 
 .result-container {

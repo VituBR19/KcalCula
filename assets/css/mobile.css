@@ -1,7 +1,70 @@
 @media screen and (max-width: 480px) {
-    .container {
+    body {
+        background-color: rgb(14, 9, 39);
+    }
+
+    .title {
+        bottom: 10px;
+        left: 0%;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .information {
+        display: none;
+        background-color: white;
         width: 300px;
-        margin: 0 auto;
+        height: 150px;
+        top: 12%;
+        left: 10%;
+        border-radius: 8px;
+        overflow: hidden;
+        color: black;
+        border: 5px dashed black;
+        z-index: 1;
+    }
+
+    .information p {
+        text-align: center;
+        padding: 20px;
+        top: -50px;
+        left: -45px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+
+    .background {
+        display: none;
+    }
+
+    .content {
+        width: 50%;
+        height: 350px;
+        float: right;
+        right: 25%;
+        bottom: 0%;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .inputs label,
+    .inputs input {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    .container {
+        background-color: transparent;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgb(14, 9, 39);
     }
     .modal-content {
         max-height: 90%;
