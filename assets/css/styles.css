@@ -44,6 +44,10 @@ header {
   justify-content: center;
 }
 
+header img {
+  display: none;
+}
+
 .information {
   width: 300px;
   height: 100%;
