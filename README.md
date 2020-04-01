@@ -6,6 +6,8 @@ KcalCula é um pequeno projeto feito para ajudar pessoas a saberem informações
 - Média de calorias que você deve consumir para **perder** peso.
 - Média de calorias que você deve consumir para **ganhar** peso.
 
+Planejado por Mateus Silva [Mateus Silva](https://www.youtube.com/channel/UCNckxUYl117w3hfgoj3DbWg)
+
 O projeto foi inteiramente feito com HTML5, CSS3 e JavasScript.
 
 **O projeto será melhorado com o decorrer do tempo.**
@@ -13,11 +15,9 @@ O projeto foi inteiramente feito com HTML5, CSS3 e JavasScript.
 ## Passos futuros 
 - [x] Regra de validação do formulário.
 - [x] Adicionar responsividade ao design.
+- [x] Alteração de Design.
 
 
 ## Screenshots 
 
-![Screenshot1](screenshots/Screenshot_1.png)
-
-![Scrintshot2](screenshots/Screenshot_2.png)
-
+![Screenshot1](screenshots/gif-KcalCula3.gif)
